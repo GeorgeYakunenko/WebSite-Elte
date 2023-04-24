@@ -107,7 +107,7 @@ body {
 
 /* title*/
 
-.title {
+.title , .sleep-info__title, .nutrition__title, .mindset__title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 70px;
@@ -146,7 +146,7 @@ body {
 /* dsfsdfs */
 
 .areas {
-   padding: 60px 0 120px; 
+   padding: 60px 0 ; 
 }
 
 .areas__items {
@@ -242,14 +242,6 @@ body {
   font-weight: 400;
 }
 
-
-
-.sleep-info__title {
-  text-align: center;
-  font-size: 2rem;
-  padding-bottom: 70px;
-}
-
 .sleep-info__img {
   float: left;
   padding: 0 25px 25px 0;
@@ -259,25 +251,24 @@ body {
   padding: 50px 0 60px;
 }
 
-.sleep-steps {
+.steps {
   background-color: #cacaca;
   padding: 60px 0;
   text-align: center;
 }
 
-
-.sleep-steps__title {
+.steps__title {
   margin-bottom: 40px;
 }
 
-.sleep-steps__item {
+.steps__item {
   text-align: start;
   padding: 5px;
   margin: 10px auto;
   max-width: 700px;
 }
 
-.sleep-steps__decor {
+.steps__decor {
   height: 15px;
   width: 15px;
   margin-right: 10px;
@@ -286,7 +277,84 @@ body {
   display: inline-block;
 }
 
+.steps-workout__text {
+  font-weight: 600;
+  color: #3e1818;
+  margin: 70px auto 10px;
+  max-width: 700px;
+}
 
+.buttons-nav__pages {
+  background-color: #e7e0e0;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.buttons-nav__pages-item.buttons-nav__pages-next {
+  background-color: #96ac62;
+}
+
+.buttons-nav__pages-item.buttons-nav__pages-next:hover {
+  background-color: #5a6f28;
+}
+
+.buttons-nav__pages-item {
+  background-color: #20949a
+}
+
+.buttons-nav__pages-item:hover {
+  background-color: #244c4e
+}
+
+.nutrition {
+  padding: 60px 0;
+}
+
+.mindset {
+  padding: 60px 0;
+}
+
+.mindset__text {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.mindset__subtitle {
+  font-size: 28px;
+  color: #190b2c;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+
+.mindset-items {
+  display: flex;
+  grid-gap: 25px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.mindset__text-item {
+  padding: 10px 0;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: url('../img/mindSet/bg.jpg');
+  background-size: cover;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+
+.video-play__img {
+  height: 125px;
+  width: 125px;
+}
 
 /* media */
 
@@ -296,7 +364,11 @@ body {
     margin: 0 auto;
     float: none;
     padding-bottom: 50px;
-}
+  }
+  .sleep-info__content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -417,5 +489,13 @@ body {
   .menu-btn {
     margin-left: 10px;
   }
+
+  .buttons-nav__pages {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+
 }
 

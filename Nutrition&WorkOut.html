@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition&WorkOut</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="index.html"><img class="logo" src="img/Logo.png" alt="logo life upgrade" /></a>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">Home</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="sleep.html">Sleep</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="Nutrition&WorkOut.html">Nutrition&WorkOut</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="MindSet.html">MindSet</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="button-box">
+          <button class="btn-contact btn-style">Contact us</button>
+          <div class="menu-btn">
+            <span class="menu-btn__span menu-btn__span--1"></span>
+            <span class="menu-btn__span menu-btn__span--2"></span>
+            <span class="menu-btn__span menu-btn__span--3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">   
+      <section class="nutrition">
+        <div class="container">
+        <h1 class="nutrition__title">Nutrition and WorkOut</h1>
+        <div class="nutrition-box">
+          <img class="nutrition__img" src="img/workOut/1.jpg" alt="Chris Heria sportsmen foto">
+          <div class="nutrition__text">In today's fast-paced world, it can be challenging to find the time to prioritize
+            our health and fitness. However, a
+            healthy lifestyle, which includes regular exercise and good nutrition, is essential for our physical and
+            mental
+            well-being. In this article, we will discuss the importance of exercise and good nutrition and provide four
+            steps that
+            can help improve these areas.</div>
+        </div>
+        </div>
+      </section>
+      <section class="workout">
+        <div class="container">
+          <h2 class="workout__title">The Importance of Exercise</h2>
+          <div class="workout__box">
+            <img class="workout__content" src="img/workOut/2.jpg" alt="running men">
+            <div class="workout__text">Regular exercise is critical for our overall health and well-being. Exercise can help reduce the risk of chronic
+            diseases such as obesity, diabetes, and heart disease. Additionally, exercise can improve our mood and mental health by
+            releasing endorphins, which help us feel happy and reduce stress.</div>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <h2 class="steps__title">Four Steps to Improve Exercise and Good Nutrition</h2>
+          <ul class="steps__block">
+            <li class="steps__item">
+              <div class="steps__decor"></div>
+              Set Realistic Goals: The first step to improving our exercise and nutrition is to set realistic goals. We should start
+              by setting small, achievable goals and gradually increase the difficulty level. For example, if we are new to
+              exercising, we can start by walking for 10-15 minutes a day and gradually increase the duration and intensity of our
+              workout.
+            </li>
+            <li class="steps__item">
+              <div class="steps__decor"></div>
+              Create a Plan: Once we have set our goals, we need to create a plan to achieve them. We can create a workout schedule
+              and plan our meals in advance. This can help us stay on track and avoid making unhealthy choices due to lack of time or
+              preparation.
+            </li>
+            <li class="steps__item">
+              <div class="steps__decor"></div>
+              Seek Professional Help: If we are new to exercising or have a specific health condition, it's essential to seek
+              professional help. We can consult with a personal trainer or a registered dietitian who can help us create a workout and
+              nutrition plan that's tailored to our individual needs and goals.
+            </li>
+            <li class="steps__item">
+              <div class="steps__decor"></div>
+              Practice Consistency: Consistency is key when it comes to improving our exercise and nutrition. We should aim to
+              exercise and eat healthy foods regularly, even when we don't feel motivated. Making exercise and good nutrition a part
+              of our daily routine can help us develop healthy habits and improve our overall well-being.
+            </li>
+          </ul>
+          <p class="steps-workout__text">
+            In conclusion, regular exercise and good nutrition are essential for our physical and mental well-being. By setting
+            realistic goals, creating a plan, seeking professional help, and practicing consistency, we can improve our exercise and
+            nutrition and reap the benefits of a healthy lifestyle.
+          </p>
+        </div>
+      </section>
+      <div class="buttons-nav__pages">
+          <a class="buttons-nav__pages-item btn-style" href="sleep.html">Bo Back To Sleep</a>
+          <a class="buttons-nav__pages-item btn-style buttons-nav__pages-next" href="mindSet.html">To Next To MindSet</a>
+      </div>
+
+  </main>
+  <div class="pop-up-inner">
+    <div class="pop-up">
+      <div class="pop-up__top">
+        <h3 class="pop-up__title">CONTACT US</h3>
+        <button class="pop-up__btn"><img width="24px" src="img/close.svg" alt=""></button>
+      </div>
+      <form class="form" action="">
+        <label class="form__name">
+          <input class="form__input" placeholder="Please write your name" name="name" type="text">
+        </label>
+
+        <label class="form__radio">
+          <span>Choose your gender:</span>
+          <br>
+          <input type="radio" name="gender" value="male"> Male
+          <br>
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+
+        <label class="form__textarea">
+          <textarea id="message" placeholder="Please write your message" name="message" required></textarea>
+        </label>
+
+        <label class="form__checkbox">
+          I agree to the processing of my data <input type="checkbox" name="agree" value="yes">
+        </label>
+
+        <div class="form__btn-box">
+          <button class="form__btn-clean btn-style" type="reset">Clean</button>
+          <button class="form__btn-submit btn-style" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <h3 class="footer__title">Additional information</h3>
+        <table class="footer__table">
+          <tr class="footer__table-row">
+            <td class="footer__table-column">Produced by:</td>
+            <td class="footer__table-column">GeorgiyIakunenko</td>
+            <td class="footer__table-column"><a class="footer__table-link"
+                href="mailto:goshanyakunenko@gmail.com">goshanyakunenko@gmail.com</a></td>
+          </tr>
+          <tr class="footer__table-row">
+            <td class="footer__table-column">Education place:</td>
+            <td class="footer__table-column">Elte University</td>
+            <td class="footer__table-column">
+              <a class="footer__table-link"
+                href="https://www.google.com/maps/place/Budapest,+P%C3%A1zm%C3%A1ny+P%C3%A9ter+stny.+1,+1117+Hungary/"
+                target="_blank" rel="noopener noreferrer">Budapest, Pázmány Péter stny. 1/C, 1117</a>
+            </td>
+          </tr>
+          <tr class="footer__table-row">
+            <td class="footer__table-column">Release date:</td>
+            <td class="footer__table-column">April 21</td>
+            <td class="footer__table-column">2023 year</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
