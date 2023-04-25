@@ -7,6 +7,7 @@
   transform: translate(-50%, -50%);
   border: 3px solid #f1f1f1;
   z-index: 1000;
+  border-radius: 10px;
   width: 80%;
   padding: 25px;
 }
@@ -45,7 +46,7 @@
 }
 
 .form__input {
-  border: 1px solid #eee;
+  border: 1px solid #2c0c0c;
   padding: 10px 20px;
   width: 100%;
   margin-bottom: 5px;
@@ -84,6 +85,14 @@
 .form__btn-box {
   display: flex;
   justify-content: flex-end;
+}
+
+.form__btn-clean {
+  background-color: rgb(217, 67, 67);
+}
+
+.form__btn-clean:hover {
+  background-color: rgb(146, 20, 20);
 }
 
 .form__btn-submit {
