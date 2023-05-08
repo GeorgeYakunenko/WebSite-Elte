@@ -57,7 +57,9 @@
             Firstly, sleep is crucial for our physical health as it allows our body to repair and rejuvenate itself.
             During sleep, our body produces proteins that help repair our cells and tissues. Lack of sleep has been
             linked to various health problems such as obesity, diabetes, and heart disease.
-            Additionally, sleep is also essential for our immune system as it helps us fight of infections and diseases.
+            Additionally, sleep is also essential for our <a
+              href="https://www.uchealth.com/en/media-room/covid-19/better-sleep-habits-to-strengthen-immunity#:~:text=Making%20sure%20your%20body%20has,inflammation%2C%20creating%20an%20immune%20response.">
+              immune system</a> as it helps us fight of infections and diseases.
             Secondly, sleep plays a vital role in our mental and emotional health. It helps us regulate our emotions,
             reduce stress, and improve our cognitive function. Lack of sleep has been linked to depression, anxiety, and
             other mental health disorders. Getting enough sleep can significantly improve our mood and overall
@@ -106,45 +108,47 @@
     </section>
     <div class="buttons-nav__pages">
       <a class="buttons-nav__pages-item btn-style" href="index.html">Bo Back To Home</a>
-      <a class="buttons-nav__pages-item btn-style buttons-nav__pages-next" href="Nutrition&WorkOut.html">To Next To Nutrition&WorkOut</a>
+      <a class="buttons-nav__pages-item btn-style buttons-nav__pages-next" href="Nutrition&WorkOut.html">To Next To
+        Nutrition&WorkOut</a>
     </div>
 
   </main>
   <div class="pop-up-inner">
     <div class="pop-up">
       <div class="pop-up__top">
-        <h3 class="pop-up__title">CONTACT US</h3>
-        <button class="pop-up__btn"><img width="24px" src="img/close.svg" alt=""></button>
+        <div class="pop-up__title">CONTACT US</div>
+        <button class="pop-up__btn"><img src="img/close.svg" alt="close btn"></button>
       </div>
-      <form class="form" action="">
+      <form class="form" action="process.php" method="post">
         <label class="form__name">
           <input class="form__input" placeholder="Please write your name" name="name" type="text">
         </label>
-
-        <label class="form__radio">
-          <span>Choose your gender:</span>
-          <br>
-          <input type="radio" name="gender" value="male"> Male
-          <br>
-          <input type="radio" name="gender" value="female"> Female
-        </label>
-
+        <fieldset class="form__radio">
+          <legend>Choose your gender:</legend>
+          <label>
+            <input type="radio" name="gender" value="male"> Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female"> Female
+          </label>
+        </fieldset>
         <label class="form__textarea">
           <textarea id="message" placeholder="Please write your message" name="message" required></textarea>
         </label>
-
         <label class="form__checkbox">
           I agree to the processing of my data <input type="checkbox" name="agree" value="yes">
         </label>
-
-        
+        <div class="form__btn-box">
+          <button class="form__btn-clean btn-style" type="reset">Clean</button>
+          <button class="form__btn-submit btn-style" type="submit">Send</button>
+        </div>
       </form>
     </div>
   </div>
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <h3 class="footer__title">Additional information</h3>
+        <div class="footer__title">Additional information</div>
         <table class="footer__table">
           <tr class="footer__table-row">
             <td class="footer__table-column">Produced by:</td>

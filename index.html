@@ -70,64 +70,63 @@
         </div>
       </section>
       <section class="areas">
-        <h2 class="areas__title title">3 areas where you need to start to improve your life</h2>
+        <h3 class="areas__title title">3 areas where you need to start to improve your life</h3>
         <div class="areas__items">
           <div class="areas__item">
             <img class="areas__item-img" src="img/HomePage/2.jpg" alt="sleep image" />
-            <h3 class="areas__item-title">Sleep</h3>
+            <a href="sleep.html" class="areas__item-title">Sleep</a>
           </div>
           <div class="areas__item">
             <img class="areas__item-img" src="img/HomePage/3.jpg" alt="healthy food and WorkOut image" />
-            <h3 class="areas__item-title">Nutrition&WorkOut</h3>
+            <a class="areas__item-title" href="Nutrition&WorkOut.html">Nutrition&WorkOut</a>
           </div>
           <div class="areas__item">
             <img class="areas__item-img" src="img/HomePage/4.jpg" alt="MindSet image" />
-            <h3 class="areas__item-title">MindSet</h3>
+            <a href="mindSet.html" class="areas__item-title">MindSet</a>
           </div>
         </div>
-    </div>
-    </section>
-    <div class="buttons-nav__pages">
-      <a class="buttons-nav__pages-item btn-style buttons-nav__pages-next" href="sleep.html">To Next To Sleep</a>
+      </section>
+      <div class="buttons-nav__pages">
+        <a class="buttons-nav__pages-item btn-style buttons-nav__pages-next" href="sleep.html">To Next To Sleep</a>
+      </div>
     </div>
   </main>
   <div class="pop-up-inner">
     <div class="pop-up">
       <div class="pop-up__top">
-        <h3 class="pop-up__title">CONTACT US</h3>
-        <button class="pop-up__btn"><img width="24px" src="img/close.svg" alt=""></button>
+        <div class="pop-up__title">CONTACT US</div>
+        <button class="pop-up__btn"><img src="img/close.svg" alt="close btn"></button>
       </div>
-      <form class="form" action="">
+      <form class="form" action="process.php" method="post">
         <label class="form__name">
           <input class="form__input" placeholder="Please write your name" name="name" type="text">
         </label>
-  
-        <label class="form__radio">
-          <span>Choose your gender:</span>
-          <br>
-          <input type="radio" name="gender" value="male"> Male
-          <br>
-          <input type="radio" name="gender" value="female"> Female
-        </label>
-  
+        <fieldset class="form__radio">
+          <legend>Choose your gender:</legend>
+          <label>
+            <input type="radio" name="gender" value="male"> Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female"> Female
+          </label>
+        </fieldset>
         <label class="form__textarea">
           <textarea id="message" placeholder="Please write your message" name="message" required></textarea>
         </label>
-  
         <label class="form__checkbox">
-          I agree to the processing of my data <input type="checkbox" name="agree" value="yes"> 
+          I agree to the processing of my data <input type="checkbox" name="agree" value="yes">
         </label>
-  
         <div class="form__btn-box">
           <button class="form__btn-clean btn-style" type="reset">Clean</button>
-          <button class="form__btn-submit btn-style" type="submit">Send</button></div>
+          <button class="form__btn-submit btn-style" type="submit">Send</button>
+        </div>
       </form>
     </div>
   </div>
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <h3 class="footer__title">Additional information</h3>
+        <div class="footer__title">Additional information</div>
         <table class="footer__table">
           <tr class="footer__table-row">
             <td class="footer__table-column">Produced by:</td>

@@ -60,79 +60,102 @@
           mindset can hold us back and prevent us from reaching our full potential
         </div>
         <div class="mindset-items">
-          <a target="_blank" href="img/mindSet/1.jpg"><img class="mindset-item" src="img/mindSet/1-small.png" alt="	Will Smith"></a>
-          <a target="_blank" href="img/mindSet/2.jpg"><img class="mindset-item" src="img/mindSet/2-small.png" alt="Lebron"></a>
-          <a target="_blank" href="img/mindSet/3.jpg"><img class="mindset-item" src="img/mindSet/3-small.png" alt="	David Goggins"></a>
+          <figure>
+            <a href="img/mindSet/1.jpg" target="_blank">
+              <img class="mindset-item" src="img/mindSet/1-small.png" alt="Will Smith">
+            </a>
+            <figcaption>Will Smith</figcaption>
+          </figure>
+
+          <figure>
+            <a href="img/mindSet/2.jpg" target="_blank">
+              <img class="mindset-item" src="img/mindSet/2-small.png" alt="David Goggins">
+            </a>
+            <figcaption>David Goggins</figcaption>
+          </figure>
+
+          <figure>
+            <a href="img/mindSet/3.jpg" target="_blank">
+              <img class="mindset-item" src="img/mindSet/3-small.png" alt="Jordan Peterson">
+            </a>
+            <figcaption>Jordan Peterson</figcaption>
+          </figure>
         </div>
+
         <ul class="mindset__text">
           <li class="mindset__text-item">
-            Will Smith: Will Smith is a well-known actor, producer, and rapper. He is also an advocate of positive thinking and
-            personal development. He often talks about the power of visualization, setting goals, and taking action to achieve them.
-            He believes that our thoughts and beliefs can shape our reality and that we have the power to create the life we want
+            Will Smith: Will Smith is a well-known actor, producer, and rapper. He is also an advocate of positive
+            thinking and
+            personal development. He often talks about the power of visualization, setting goals, and taking action to
+            achieve them.
+            He believes that our thoughts and beliefs can shape our reality and that we have the power to create the
+            life we want
             through our mindset.
           </li>
           <li class="mindset__text-item">
-            David Goggins: David Goggins is a retired Navy SEAL and ultramarathon runner. He is known for his incredible mental
-            toughness and resilience, which he developed through years of training and challenging himself in extreme environments.
-            He advocates for the power of mindset and emphasizes the importance of pushing past our limits and embracing discomfort
-            to achieve our goals. He also emphasizes the importance of self-discipline, hard work, and dedication to success.
+            David Goggins: David Goggins is a retired Navy SEAL and ultramarathon runner. He is known for his incredible
+            mental
+            toughness and resilience, which he developed through years of training and challenging himself in extreme
+            environments.
+            He advocates for the power of mindset and emphasizes the importance of pushing past our limits and embracing
+            discomfort
+            to achieve our goals. He also emphasizes the importance of self-discipline, hard work, and dedication to
+            success.
           </li>
           <li class="mindset__text-item">
-            Jordan Peterson's mindset emphasizes personal responsibility, growth, and meaning. He encourages individuals to take
-            responsibility for their lives and to actively work towards self-improvement, setting clear goals and working hard to
-            achieve them. He also emphasizes the importance of developing a strong sense of meaning and purpose in life, as well as
-            the value of facing and overcoming challenges in order to develop resilience and character. Overall, Jordan Peterson's
-            mindset is focused on empowering individuals to take control of their lives, pursue their goals, and find meaning and
+            Jordan Peterson's mindset emphasizes personal responsibility, growth, and meaning. He encourages individuals
+            to take
+            responsibility for their lives and to actively work towards self-improvement, setting clear goals and
+            working hard to
+            achieve them. He also emphasizes the importance of developing a strong sense of meaning and purpose in life,
+            as well as
+            the value of facing and overcoming challenges in order to develop resilience and character. Overall, Jordan
+            Peterson's
+            mindset is focused on empowering individuals to take control of their lives, pursue their goals, and find
+            meaning and
             fulfillment in the process.
           </li>
-           
-           
-           
-
         </ul>
       </div>
     </section>
-
-    <video class="video" controls>
-      <source src="videos/video.mp4" type="video/mp4">
+    <div class="video-wrapper">
       <a class="video-link" href="">
         <img class="video-play__img" src="img/play.png" alt="play button">
       </a>
-    </video>
-    
+      <video src="video/video.mp4" class="video" controls>
+        <track label="English" kind="subtitles" src="video.srt" srclang="en" default>
+      </video>
+    </div>
     <div class="buttons-nav__pages">
       <a class="buttons-nav__pages-item btn-style" href="Nutrition&WorkOut.html">Bo Back To Nutrition&WorkOut</a>
       <a class="buttons-nav__pages-item btn-style buttons-nav__pages-next" href="index.html">Finish and go Home</a>
     </div>
-
   </main>
   <div class="pop-up-inner">
     <div class="pop-up">
       <div class="pop-up__top">
-        <h3 class="pop-up__title">CONTACT US</h3>
-        <button class="pop-up__btn"><img width="24px" src="img/close.svg" alt=""></button>
+        <div class="pop-up__title">CONTACT US</div>
+        <button class="pop-up__btn"><img src="img/close.svg" alt="close btn"></button>
       </div>
-      <form class="form" action="">
+      <form class="form" action="process.php" method="post">
         <label class="form__name">
           <input class="form__input" placeholder="Please write your name" name="name" type="text">
         </label>
-
-        <label class="form__radio">
-          <span>Choose your gender:</span>
-          <br>
-          <input type="radio" name="gender" value="male"> Male
-          <br>
-          <input type="radio" name="gender" value="female"> Female
-        </label>
-
+        <fieldset class="form__radio">
+          <legend>Choose your gender:</legend>
+          <label>
+            <input type="radio" name="gender" value="male"> Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female"> Female
+          </label>
+        </fieldset>
         <label class="form__textarea">
           <textarea id="message" placeholder="Please write your message" name="message" required></textarea>
         </label>
-
         <label class="form__checkbox">
           I agree to the processing of my data <input type="checkbox" name="agree" value="yes">
         </label>
-
         <div class="form__btn-box">
           <button class="form__btn-clean btn-style" type="reset">Clean</button>
           <button class="form__btn-submit btn-style" type="submit">Send</button>
@@ -143,7 +166,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <h3 class="footer__title">Additional information</h3>
+        <div class="footer__title">Additional information</div>
         <table class="footer__table">
           <tr class="footer__table-row">
             <td class="footer__table-column">Produced by:</td>

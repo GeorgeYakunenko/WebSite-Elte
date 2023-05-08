@@ -102,3 +102,9 @@
 .pop-up.active {
   display: block;
 }
+
+@media (max-width: 600px) {
+  .pop-up {
+    width: 92%;
+  }
+}

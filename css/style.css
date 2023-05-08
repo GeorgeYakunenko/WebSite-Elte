@@ -8,6 +8,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: underline;
+}
 
 
 .container {
@@ -20,10 +23,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color:#fff;
+  background-color: #fff;
+  z-index: 999;
 }
 
-.header + .main   {
+.header+.main {
   padding-top: 101px;
 }
 
@@ -35,22 +39,23 @@ body {
 }
 
 .menu-list {
- display: flex;
- 
+  display: flex;
+
 }
 
 .menu-list__link {
   color: #000;
+  text-decoration: none;
 }
 
 .menu-list__link.active {
   font-weight: 600;
-  color:rgb(133, 18, 18);
+  color: rgb(133, 18, 18);
   text-decoration: underline;
 
 }
 
-.menu-list__item + .menu-list__item {
+.menu-list__item+.menu-list__item {
   margin-left: 35px;
 }
 
@@ -65,7 +70,9 @@ body {
   box-shadow: 0 3px #999;
 }
 
-.btn-style:hover {background-color: #3e8e41}
+.btn-style:hover {
+  background-color: #3e8e41
+}
 
 .btn-style:active {
   background-color: #3e8e41;
@@ -75,14 +82,13 @@ body {
 
 /* menu burger */
 
-.button-box{
+.button-box {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 .menu-btn {
   margin-left: 15px;
-  display: flex;
   z-index: 999;
   flex-direction: column;
   justify-content: space-between;
@@ -107,23 +113,26 @@ body {
 
 /* title*/
 
-.title , .sleep-info__title, .nutrition__title, .mindset__title {
+.title,
+.sleep-info__title,
+.nutrition__title,
+.mindset__title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 70px;
 }
 
-/* main-page */ 
+/* main-page */
 .main {
   background-color: #E5E5E5;
 }
+
 .main-page {
   padding: 60px 0;
 }
 
 .main-page__img {
   border-radius: 10px;
-  max-width: auto;
 }
 
 .main-page__reasons {
@@ -146,7 +155,7 @@ body {
 /* dsfsdfs */
 
 .areas {
-   padding: 60px 0 ; 
+  padding: 60px 0;
 }
 
 .areas__items {
@@ -166,11 +175,13 @@ body {
 }
 
 .areas__item-title {
+  font-size: 18px;
   color: #385ffb;
+  text-decoration: none;
   padding: 5px 15px;
   display: inline-block;
-  background-color:#fff;
-  border:1px solid #7342ef;
+  background-color: #fff;
+  border: 1px solid #7342ef;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
@@ -179,7 +190,7 @@ body {
 .areas__item-title:hover {
   color: #ffffff;
   background-color: #385ffb;
-  border:1px solid #7342ef;
+  border: 1px solid #7342ef;
 }
 
 .areas__item-img {
@@ -195,18 +206,19 @@ body {
 }
 
 .footer__title {
+  font-size: 24px;
+  font-weight: bold;
   margin-bottom: 40px;
 }
 
 .footer__wrapper {
-  
+
   text-align: center;
 }
 
 /*8*/
 
 .footer__table {
-  margin: 2rem 0;
   max-width: 700px;
   margin: 0 auto;
   border-collapse: collapse;
@@ -258,7 +270,40 @@ body {
 }
 
 .steps__title {
-  margin-bottom: 40px;
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.workout__title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+article {
+  padding: 15px;
+}
+
+aside {
+  color: white;
+  background-color: rgb(122, 144, 136);
+  padding: 15px;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+aside h5 {
+  color: rgb(144, 192, 218);
+  font-size: 18px;
+}
+
+.aside__link:visited {
+  color: rgb(27, 1, 1);
+}
+
+article header {
+  margin-bottom: 15px;
 }
 
 .steps__item {
@@ -285,7 +330,6 @@ body {
 }
 
 .buttons-nav__pages {
-  background-color: #e7e0e0;
   padding: 40px 10px;
   display: flex;
   justify-content: center;
@@ -301,15 +345,31 @@ body {
 }
 
 .buttons-nav__pages-item {
-  background-color: #20949a
+  text-decoration: none;
+  background-color: #20949a;
 }
 
 .buttons-nav__pages-item:hover {
-  background-color: #244c4e
+  background-color: #244c4e;
 }
 
 .nutrition {
   padding: 60px 0;
+}
+
+.workout__content {
+  float: right;
+  padding: 15px;
+}
+
+.nutrition__img {
+  float: left;
+  padding: 15px;
+
+}
+
+.nutrition__text {
+  padding: 15px;
 }
 
 .mindset {
@@ -341,14 +401,34 @@ body {
 }
 
 .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video.active {
+  z-index: 1;
+}
+
+.video-wrapper.active {
+  background-image: none;
+}
+
+.video-wrapper {
+  background-image: url('../img/mindSet/bg.jpg');
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  height: 400px;
+  /* Set the desired height for your video */
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  background-image: url('../img/mindSet/bg.jpg');
-  background-size: cover;
-  margin-bottom: 50px;
-  margin: 0 auto;
 }
 
 .video-play__img {
@@ -356,7 +436,17 @@ body {
   width: 125px;
 }
 
+figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+body.active {
+  overflow: hidden;
+}
+
 /* media */
+
 
 
 @media (max-width: 1200px) {
@@ -365,6 +455,7 @@ body {
     float: none;
     padding-bottom: 50px;
   }
+
   .sleep-info__content {
     max-width: 700px;
     margin: 0 auto;
@@ -383,9 +474,22 @@ body {
     margin-top: 50px;
   }
 
-   .areas__item-img {
-  max-width: 325px;
+  .areas__item-img {
+    max-width: 325px;
+  }
+
+  .nutrition__img {
+    float: none;
+    margin: 0 auto;
+    padding: 15px;
+
+  }
 }
+
+@media (max-width: 860px) {
+  .video-wrapper {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -402,13 +506,11 @@ body {
     z-index: 998;
     transform: translateX(-110%);
     transition: transform 0.3s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
+    box-shadow: 5px 0 10px 0 #aaa;
   }
 
-  body.active {
-    overflow: hidden;
-  }
-  
+
+
   .menu-btn {
     display: flex;
   }
@@ -420,8 +522,8 @@ body {
     margin-top: 3rem;
   }
 
-  .menu-list__item + .menu-list__item {
-  margin-left: 0px;
+  .menu-list__item+.menu-list__item {
+    margin-left: 0;
   }
 
   .menu-list__item {
@@ -474,7 +576,7 @@ body {
 
   .footer__table-column:last-child {
     text-align: center;
-  } 
+  }
 }
 
 @media (max-width: 500px) {
@@ -496,6 +598,11 @@ body {
     margin: 0 auto;
   }
 
+  .mindset-items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
 
 }
-
